@@ -34,7 +34,7 @@
         <div class="container">
             <div class="navbar-translate">
                 <a class="navbar-brand" href="#">New Kids On The Code (NKOTC)</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" -expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     <span class="navbar-toggler-icon"></span>
                     <span class="navbar-toggler-icon"></span>
@@ -43,12 +43,12 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a id="nav-item-project" class="nav-link" href="#project" onclick="javascript:window.location.reload()">
+                        <a class="nav-link" href="#project">
                             <i class="material-icons">textsms</i> Le projet
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact" onclick="javascript:window.location.reload()">
+                        <a class="nav-link" href="#contact">
                             <i class="material-icons">mail_outline</i>Contact
                         </a>
                     </li>
@@ -112,30 +112,32 @@
                         <h2 class="text-center title">Vous êtes intéressés&nbsp;?</h2>
                         <h3 class="text-center title">Vous voulez essayer un cours gratuit&nbsp;?</h3>
                         <h4 class="text-center description">Laissez-nous votre email ou téléphone pour que nous puissions vous recontacter.</h4>
-                        <form class="contact-form">
+                        <form class="contact-form" action="https://new-kids-on-the-code.us12.list-manage.com/subscribe/post?u=96af22a59b5b67df69d0b486e&amp;id=1a852f27df" method="POST" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
+-                              <input type="hidden" name="u" value="96af22a59b5b67df69d0b486e">
+-                              <input type="hidden" name="id" value="1a852f27df">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="bmd-label-floating">Votre Nom</label>
-                                        <input id="nom" type="text" class="form-control">
+                                        <input id="mce-NAME"name="NAME" type="text" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="bmd-label-floating">Votre Email</label>
-                                        <input id="email" type="email" class="form-control">
+                                        <input id="mce-EMAIL" name="EMAIL" type="email" class="form-control" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="bmd-label-floating">Votre téléphone</label>
-                                        <input id="phonenumber" type="text" class="form-control">
+                                        <input id="mce-PHONE" name="PHONE" type="text" class="form-control">
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="exampleMessage" class="bmd-label-floating">Vous voulez nous dire un truc&nbsp;?</label>
-                                <textarea type="email" class="form-control" rows="4" id="exampleMessage"></textarea>
+                                  <label for="exampleMessage" class="bmd-label-floating">Vous voulez nous dire un truc?</label>
+                                <textarea type="text" class="form-control" rows="4" name="MMERGE6" id="mce-MMERGE6"></textarea>
                             </div>
                             <div class="row">
                                 <div class="col-md-4 ml-auto mr-auto text-center">
@@ -188,9 +190,6 @@
     <script src="assets/js/plugins/nouislider.min.js"></script>
     <!-- Material Kit Core initialisations of plugins and Bootstrap Material Design Library -->
     <script src="assets/js/material-kit.js?v=2.0.2"></script>
-    <script>
-
-    </script>
 </body>
 
 </html>
